@@ -1,0 +1,30 @@
+<ion-app>
+  <ion-menu id="workflow-menu" side="start" menuId="topmenu" contentId='topcontent'>
+    <ion-header>
+      <ion-toolbar color="primary">
+       <ion-title >Start Menu
+          <ion-icon slot="end" name="refresh-outline"></ion-icon>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="10" [routerLink]="['/tabbed/a', 'A from menu']" routerDirection="forward" (click)="menu.close()">
+                <h3 class="invnt-menu-workflow-title">A</h3>
+              </ion-col>
+	    </ion-row>
+              <ion-row>
+		      <ion-col size="10" [routerLink]="['/tabbed/b', 'B from menu']" routerDirection="forward" (click)="menu.close()">
+			<h3 class="invnt-menu-workflow-title">B</h3>
+		      </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div>
+    <ion-router-outlet id='topcontent' #outlet="outlet"></ion-router-outlet>
+  </div>
+</ion-app>

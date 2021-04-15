@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('DM Sans Medium'), local('DMSans-Medium'), url(https://fonts.gstatic.com/s/dmsans/v4/rP2Cp2ywxg089UriAWCrOB8.ttf) format('truetype');
+}

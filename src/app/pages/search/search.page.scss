@@ -1,0 +1,183 @@
+.busy-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.ripple-parent {
+   position: relative;
+   overflow: hidden;
+}
+
+
+ion-title {
+	font-family: DM Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 47px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+	color: #000000;
+}
+
+.col-align-end {
+  text-align: end;
+}
+
+.thing-list, .stickerset-list {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+h2.thing-list-title, h2.stickerset-list-title {
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h3.stickerset-name {
+  /* Childrens books #av5Ed */
+
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+h3.stickerset-noname {
+
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 18px;
+  color: #111111;
+}
+
+.stickerset-id {
+  color: #ACB3BF;
+}
+
+.stickerset-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.stickerset-nodescription {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #111111;
+}
+
+.stickerset-preview-image {
+  width: 40vw;
+  height: 40vw;
+  background-color:grey;
+  position:absolute;
+  right: 0px;
+}
+
+.vertical-align {    
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
+}
+
+:root {
+  --ion-color-white: #ffffff;
+  --ion-color-white-rgb: 255,255,255;
+  --ion-color-white-contrast: #000000;
+  --ion-color-white-contrast-rgb: 0,0,0;
+  --ion-color-white-shade: #e0e0e0;
+  --ion-color-white-tint: #ffffff;
+}
+
+.ion-color-white {
+  --ion-color-base: var(--ion-color-white);
+  --ion-color-base-rgb: var(--ion-color-white-rgb);
+  --ion-color-contrast: var(--ion-color-white-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+  --ion-color-shade: var(--ion-color-white-shade);
+  --ion-color-tint: var(--ion-color-white-tint);
+}
+
+.input-border {
+  border: 2px solid black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+ion-content {
+  --background: rgba(255, 255, 255, .0);
+}
+
+ion-list.transparent {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.filter-chip {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  margin-left: 0px;
+  margin-right: 0.5em;
+}
+
+ion-grid {
+  border-left: 5vw solid white;
+  border-right: 5vw solid white;
+}
+
+.with-background {
+  background-color: white;
+}
+
+.scan-window {
+  --background-color: transparent !important;
+  background-color: transparent !important;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  height: 0vw;
+}
+
+.scan-window.is-scanning{
+  height: 75vw;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 80vh;
+}
+
+.searchbox {
+  padding-bottom: 4px;
+}
+
+.things-button-background {
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left:18px;
+  padding-right:18px
+}
+
+#infinite-scroll {
+  background-color: white;
+}
