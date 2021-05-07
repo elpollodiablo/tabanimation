@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
+//import { enterAnimation } from './animations/nav-animation';
 
 const routes: Routes = [
   {

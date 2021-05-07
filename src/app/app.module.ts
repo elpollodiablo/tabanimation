@@ -10,6 +10,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { CameraPreview } from '@ionic-native/camera-preview/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +20,6 @@ import { IonicStorageModule } from '@ionic/storage';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { FilePath } from '@ionic-native/file-path/ngx';
 import { ErrorHandler, Inject } from '@angular/core';
-import { enterAnimation } from './animations/nav-animation';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,7 @@ import { enterAnimation } from './animations/nav-animation';
   imports: [
     IonicModule.forRoot(
       {
-        mode: 'md',
-        navAnimation: enterAnimation,
+        mode: 'ios',
       }
     ),
     //BrowserAnimationsModule,
@@ -43,7 +42,7 @@ import { enterAnimation } from './animations/nav-animation';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-
+    CameraPreview,
     FilePath,
   ],
   bootstrap: [AppComponent]
